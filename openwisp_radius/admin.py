@@ -241,6 +241,7 @@ class RadiusGroupAdmin(OrganizationFirstMixin, TimeStampedEditableAdmin):
                 messages.SUCCESS,
             )
         return None
+    delete_selected_groups.short_description = _('Delete selected groups')
 
     def get_actions(self, request):
         actions = super().get_actions(request)

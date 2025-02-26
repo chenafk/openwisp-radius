@@ -67,8 +67,8 @@ class OpenwispRadiusConfig(ApiAppConfig):
             )
 
     def connect_signals(self):
-        Organization = swapper.load_model('openwisp_users', 'Organization')
-        OrganizationUser = swapper.load_model('openwisp_users', 'OrganizationUser')
+        Organization = swapper.load_model('openwisp_users', _('Organization'))
+        OrganizationUser = swapper.load_model('openwisp_users', _('OrganizationUser'))
         OrganizationRadiusSettings = load_model('OrganizationRadiusSettings')
         RadiusToken = load_model('RadiusToken')
         RadiusAccounting = load_model('RadiusAccounting')

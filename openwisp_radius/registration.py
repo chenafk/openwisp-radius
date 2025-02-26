@@ -6,7 +6,7 @@ from django.utils.translation import gettext_lazy as _
 from .utils import load_model
 
 REGISTRATION_METHOD_CHOICES = [
-    ('', 'Unspecified'),
+    ('', _('Unspecified')),
     ('manual', _('Manually created')),
     ('email', _('Email')),
     ('mobile_phone', _('Mobile phone')),
